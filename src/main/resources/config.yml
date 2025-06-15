@@ -1,0 +1,15 @@
+enabled: true
+
+# Intervalo entre mensagens (em segundos)
+interval: 20
+
+# Ordem aleatória das mensagens
+random-order: false
+
+# Mundos onde as mensagens serão enviadas (vazio = todos os mundos)
+enabled-worlds: []
+  # - world
+# - world_nether
+
+# Prefixo do plugin (usado em comandos)
+prefix: "&7[&bAutoMessage&7]&r "

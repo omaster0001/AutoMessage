@@ -1,0 +1,114 @@
+messages:
+  # Mensagem de exemplo com botão
+  welcome:
+    enabled: true
+    content:
+      - ""
+      - "<gradient:#ff7f7f:#7f7fff>🎉 Bem-vindo ao servidor! 🎉</gradient>"
+      - "<white>Jogadores online: <yellow>{online}/{max_players}</yellow></white>"
+      - "<click:run_command:/spawn><hover:show_text:'Clique para ir ao spawn!'><green>[🏠 IR PARA SPAWN]</green></hover></click>"
+      - ""
+    permission: ""
+    commands: []
+    sound: "ENTITY_EXPERIENCE_ORB_PICKUP"
+
+  # Mensagem com múltiplas linhas e efeitos
+  server_info:
+    enabled: true
+    content:
+      - ""
+      - "<rainbow>🌟 INFORMAÇÕES DO SERVIDOR 🌟</rainbow>"
+      - "<white>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</white>"
+      - "<yellow>📊 Status:</yellow> <green>Online</green>"
+      - "<yellow>🌍 Mundo atual:</yellow> <aqua>{world}</aqua>"
+      - "<yellow>👥 Jogadores:</yellow> <gold>{online}</gold>"
+      - ""
+      - "<click:open_url:https://discord.gg/exemplo><hover:show_text:'<green>Clique para entrar no Discord!</green>'><blue>💬 [DISCORD]</blue></hover></click> <click:open_url:https://loja.exemplo.com><hover:show_text:'<gold>Visite nossa loja!</gold>'><yellow>🛒 [LOJA]</yellow></hover></click>"
+      - "<white>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</white>"
+      - ""
+
+  # Mensagem com comandos automáticos
+  daily_reward:
+    enabled: true
+    content:
+      - ""
+      - "<gradient:#ffd700:#ffaa00>💰 RECOMPENSA DIÁRIA DISPONÍVEL! 💰</gradient>"
+      - "<white>Digite <yellow>/daily</yellow> para reivindicar sua recompensa!</white>"
+      - "<green>🎁 Ganhe moedas, itens e muito mais!</green>"
+      - ""
+    permission: "rewards.use"
+    commands:
+      - "broadcast {player} pode pegar sua recompensa diária!"
+    sound: "BLOCK_NOTE_BLOCK_PLING"
+
+  # Mensagem com animação de texto
+  vote_reminder:
+    enabled: true
+    content:
+      - ""
+      - "<yellow>⭐ <bold><rainbow:!>VOTE NO SERVIDOR</rainbow></bold> ⭐</yellow>"
+      - "<white>Seu voto nos ajuda a crescer!</white>"
+      - ""
+      - "<click:open_url:https://vote1.exemplo.com><hover:show_text:'<green>Votar no TopList!</green>'><green>[🗳️ SITE 1]</green></hover></click> <click:open_url:https://vote2.exemplo.com><hover:show_text:'<green>Votar no MinecraftServers!</green>'><green>[🗳️ SITE 2]</green></hover></click>"
+      - ""
+      - "<gray><italic>Receba recompensas por votar!</italic></gray>"
+      - ""
+
+  # Mensagem com regras
+  rules_reminder:
+    enabled: true
+    content:
+      - ""
+      - "<red>📋 <bold>LEMBRETE DAS REGRAS</bold> 📋</red>"
+      - "<white>━━━━━━━━━━━━━━━━━━━━━━━</white>"
+      - "<yellow>1.</yellow> <white>Respeite todos os jogadores</white>"
+      - "<yellow>2.</yellow> <white>Não use hacks ou trapaças</white>"
+      - "<yellow>3.</yellow> <white>Não faça spam no chat</white>"
+      - "<yellow>4.</yellow> <white>Divirta-se!</white>"
+      - ""
+      - "<click:run_command:/rules><hover:show_text:'Ver regras completas'><blue>[📖 VER REGRAS COMPLETAS]</blue></hover></click>"
+      - "<white>━━━━━━━━━━━━━━━━━━━━━━━</white>"
+      - ""
+
+  # Mensagem promocional
+  promotion:
+    enabled: false  # Desabilitada por padrão
+    content:
+      - ""
+      - "<gradient:#ff0080:#8000ff>🔥 PROMOÇÃO ESPECIAL! 🔥</gradient>"
+      - "<white>50% OFF em todos os itens da loja!</white>"
+      - "<yellow>Válido até o final do mês!</yellow>"
+      - ""
+      - "<click:open_url:https://loja.exemplo.com><hover:show_text:'<gold>Aproveite a promoção!</gold>'><gold>[🛒 COMPRAR AGORA]</gold></hover></click>"
+      - ""
+    permission: ""
+    commands: []
+    sound: "ENTITY_PLAYER_LEVELUP"
+
+  # Mensagem interativa com ações
+  interactive_message:
+    enabled: true
+    content:
+      - ""
+      - "<aqua>🎮 <bold>MENU INTERATIVO</bold> 🎮</aqua>"
+      - "<white>Clique nas opções abaixo:</white>"
+      - ""
+      - "<click:run_command:/spawn><hover:show_text:'Teleportar para o spawn'><green>🏠 Spawn</green></hover></click> <click:run_command:/warp shop><hover:show_text:'Ir para a loja'><yellow>🛒 Loja</yellow></hover></click> <click:run_command:/warp pvp><hover:show_text:'Arena de PvP'><red>⚔️ PvP</red></hover></click>"
+      - ""
+      - "<click:run_command:/help><hover:show_text:'Ver comandos disponíveis'><blue>❓ Ajuda</blue></hover></click> <click:run_command:/discord><hover:show_text:'Link do Discord'><light_purple>💬 Discord</light_purple></hover></click>"
+      - ""
+
+  # Exemplo de mensagem apenas para VIPs
+  vip_exclusive:
+    enabled: true
+    content:
+      - ""
+      - "<gradient:#ffd700:#ff8c00>👑 MENSAGEM EXCLUSIVA VIP 👑</gradient>"
+      - "<white>Obrigado por apoiar nosso servidor!</white>"
+      - "<yellow>Você tem benefícios especiais como VIP!</yellow>"
+      - ""
+      - "<click:run_command:/vip benefits><hover:show_text:'Ver benefícios VIP'><gold>[✨ VER BENEFÍCIOS]</gold></hover></click>"
+      - ""
+    permission: "group.vip"
+    commands: []
+    sound: "ENTITY_EXPERIENCE_ORB_PICKUP"

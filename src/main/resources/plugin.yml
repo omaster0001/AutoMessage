@@ -1,0 +1,20 @@
+name: AutoMessage
+version: 1.0.0
+main: br.com.master.automessage.Main
+api-version: 1.20
+
+commands:
+  automessage:
+    description: Comandos principais do AutoMessage
+    usage: /automessage <reload|list|send>
+    aliases: [am, automsg]
+    permission: automessage.admin
+
+permissions:
+  automessage.admin:
+    description: Permissão para administrar o plugin
+    default: op
+
+  automessage.receive:
+    description: Permissão para receber mensagens automáticas
+    default: true

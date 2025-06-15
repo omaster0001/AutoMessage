@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="AutoMessage">
+    <output-path>$USER_HOME$/Downloads</output-path>
+    <root id="archive" name="AutoMessage.jar">
+      <element id="module-output" name="AutoMessage" />
+    </root>
+  </artifact>
+</component>
