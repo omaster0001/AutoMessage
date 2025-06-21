@@ -16,13 +16,11 @@
     </properties>
 
     <repositories>
-        <!-- Paper Repository -->
         <repository>
             <id>papermc-repo</id>
             <url>https://repo.papermc.io/repository/maven-public/</url>
         </repository>
 
-        <!-- Sonatype Repository (for Adventure components) -->
         <repository>
             <id>sonatype</id>
             <url>https://oss.sonatype.org/content/groups/public/</url>
@@ -30,7 +28,6 @@
     </repositories>
 
     <dependencies>
-        <!-- Paper API -->
         <dependency>
             <groupId>io.papermc.paper</groupId>
             <artifactId>paper-api</artifactId>
@@ -38,7 +35,6 @@
             <scope>provided</scope>
         </dependency>
 
-        <!-- Adventure MiniMessage (já incluído no Paper, mas explícito para desenvolvimento) -->
         <dependency>
             <groupId>net.kyori</groupId>
             <artifactId>adventure-text-minimessage</artifactId>
@@ -46,7 +42,6 @@
             <scope>provided</scope>
         </dependency>
 
-        <!-- Adventure Text API (já incluído no Paper) -->
         <dependency>
             <groupId>net.kyori</groupId>
             <artifactId>adventure-api</artifactId>
@@ -57,7 +52,6 @@
 
     <build>
         <plugins>
-            <!-- Maven Compiler Plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -68,7 +62,6 @@
                 </configuration>
             </plugin>
 
-            <!-- Maven Shade Plugin para criar JAR com dependências -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
@@ -86,7 +79,6 @@
                 </executions>
             </plugin>
 
-            <!-- Plugin para copiar recursos -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-resources-plugin</artifactId>
